@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
@@ -7,33 +7,33 @@ knitr::opts_chunk$set(
 ## ----setup--------------------------------------------------------------------
 library(andrews)
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  op <- par(mfrow=c(1,2))
 #  andrews0(iris, main="andrews0")
 #  andrews(iris, main="andrews")
 #  par(op)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 op <- par(mfrow=c(1,2))
 andrews0(iris, main="andrews0")
 andrews(iris, main="andrews")
 par(op)
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  zzz()
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  andrews (df, type = 1, clr = NULL, step = 100, ymax = 10,          # old parameters
 #           alpha = NULL, palcol = NULL, lwd = 1, lty = "solid", ...) # new parameters
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  op<-par(mfrow=c(1,3))
 #  andrews(iris, main="no ymax")
 #  andrews(iris, ymax=NA, main="ymax=NA")
 #  andrews(iris, ylim=c(-1,3), main="ylim=c(-1,3)")
 #  par(op)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 op<-par(mfrow=c(1,3))
 andrews(iris, main="no ymax")
 andrews(iris, ymax=NA, main="ymax=NA")
@@ -61,7 +61,7 @@ andrews(iris, ymax=NA, clr=1) # iris$Sepal.Length
 ## -----------------------------------------------------------------------------
 andrews(iris, ymax=NA, clr=1, palcol=function(v) { gray(v) }) # iris$Sepal.Length
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  andrews(iris, ymax=NA, clr=1, palcol=gray) # iris$Sepal.Length
 
 ## -----------------------------------------------------------------------------
